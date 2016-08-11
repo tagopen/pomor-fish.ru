@@ -1,4 +1,121 @@
 +comment('general style')
-+ic
+.navbar-toggle
+  float: left
+  .icon-bar
+    background-color: #fff
+  &__text
+    margin-left: 30px
+    float: right
+    color: #fff
+.pushy
+  &-heading
+    margin: 0
+    padding: 15px 10px
+    background-color: #067145
+    color: #fff
+    text-align: center
+  &-heading
+    display: block
+    background: #ffe600
+    color: #000
+    text-align: center
+    padding: 10px
++cm('lines button')
+.lines-button
+  position: absolute
+  display: block
+  width: 40px
+  height: 40px
+  top: 0
+  left: 0
+  background: transparent !important
+  z-index: 999
+  outline: none
+.lines
+  &:before,
+  &:after
+    content: ''
+    position: relative
+    display: block
+    height: 2px
+    width: 100%
+    background: #000
+  &:before
+    +rotate(45)
+  &:after
+    top: -2.5px
+    +rotate(-45)
+.openNav #page
+  +transform(translate3d(70%, 0, 0))
+  -webkit-transition: -webkit-transform 500ms ease
+  -moz-transition: -moz-transform 500ms ease
+  -o-transition: -o-transform 500ms ease
+  transition: transform 500ms ease
++cm('When the panel is closed, transition the page back to the left')
+#page
+  +transform(translate3d(0, 0, 0))
+  -webkit-transition: -webkit-transform 500ms ease
+  -moz-transition: -moz-transform 500ms ease
+  -o-transition: -o-transform 500ms ease
+  transition: transform 500ms ease
 
 +comment("home page style")
++rx(767)
+  .navbar-nav
+    margin: 0
+  .topper_lang
+    margin-top: 15px
+  .mainp
+    padding-left: 0
+  #supermenu
+    display: none !important
+  .carousel
+    display: inline-block
+    &-indicators
+      li
+        width: 14px
+        height: 14px
+        margin-left: 3px
+        margin-right: 3px
+        &.active
+          width: 16px
+          height: 16px
+  .double
+    &_top,
+    &_bottom_left,
+    &_bottom_right
+      display: inline-block
+  .mainpage_search input[type=text]
+    padding-right: 50px
+  a.scrollup
+    bottom: 80px
++r(768)
+  .pushy-heading
+    display: none
+  .lines-button
+    display: none
+  .pushy-heading
+    display: none
+  .nav-mini>li>a
+    margin-right: 18px
+  .carousel
+    display: inline-block
+  #supermenu
+    float: right
+    ul li a.tll
+      padding-left: 5px !important
+      padding-right: 5px !important
++r(992)
+  #supermenu
+    float: none
+  .nav-mini>li>a
+    margin-right: 14px
+  .footer__column--3
+    float: right
++r(1200)
+  .nav-mini>li>a
+    margin-right: 20px
+  #supermenu
+    ul li a.tll
+      padding-left: 10px !important
+      padding-right: 10px !important
