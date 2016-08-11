@@ -184,3 +184,21 @@
     padding-right: 10px !important;
   }
 }
+/* ---------------------------------------- */
+/* C A T E G O R Y    P A G E    S T Y L E  */
+/* ---------------------------------------- */
+.categoty_table a {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .breadcrumb_line {
+    height: auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .breadcrumb_line {
+    height: 50px;
+  }
+}
