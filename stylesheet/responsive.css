@@ -360,3 +360,50 @@
     float: none;
   }
 }
+/* ---------------------------------------- */
+/* S E A R C H    P A G E    S T Y L E      */
+/* ---------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .filter-item {
+    margin-top: 5px;
+  }
+  .filter-item__category {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 469px) {
+  .checkbox-inline {
+    display: block;
+  }
+  .checkbox-inline + .checkbox-inline {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .sort__item,
+  .limit__item {
+    display: inline-block;
+    width: auto;
+  }
+}
+@media only screen and (min-width: 470px) {
+  .product_back .form-group {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .product_back .button {
+    width: 290px;
+  }
+
+  .search_main {
+    padding-bottom: 15px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .search_main {
+    padding-bottom: 0;
+  }
+}
