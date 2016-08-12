@@ -131,3 +131,111 @@
   .breadcrumb_line
     height: 50px
 
++comment('product page style')
++rx(767)
+  .product-info 
+    .left
+      width: 100%
+      text-align: center
+    .right
+      padding-top: 20px
+      width: 100%
+    .image
+      display: inline-block
+      vertical-align: top
+  .description
+    text-align: center
+  .product-info 
+    .price
+      width: 100%
+      text-align: center
+    .cart
+      width: 100%
+      text-align: center
+    .options 
+      text-align: center
+      >div
+        margin: 0
+        padding: 10px
+        float: none
+        display: inline-block
+        vertical-align: top
+        text-align: left
+  .buy_spinner
+    margin-left: auto
+    margin-right: auto
+  .buy_buttons
+    position: static
+    margin: 0 auto
+    width: 100%
+    max-width: 430px
+    text-align: center
+  .wrapper-htabs
+    padding-bottom: 20px
+  ul#tabs 
+    display: block
+    text-align: center
+    >li
+      display: inline-block
+      margin-top: 5px
+      vertical-align: top
++cm('fix "1 click" and "order" button')
++rx(369)
+  #button-cart
+    position: relative
+    top: 50px
+  #button-cart-fast
+    position: relative
+    bottom: 40px
++cm('fix product description')
++rx(400)
+  .product-info 
+    .description
+      text-align: left
+
++screen(370, 767)
+  #button-cart
+    padding-left: 15px
+    padding-right: 15px
+    width: 48%
+    float: right
+  #button-cart-fast
+    padding-left: 15px
+    padding-right: 15px
+    width: 50%
+    float: left
++comment('product page 768+ style')
++r(768)
+  .wrapper-htabs
+    padding-bottom: 4px
+  .product-info .right
+    width: 50%
+  .buy_buttons
+    position: relative
+    width: 100%
+    top: 23px
+  #button-cart
+    width: 50%
+    float: right
+  #button-cart-fast
+    padding-left: 15px
+    padding-right: 15px
+    width: 48%
+    float: left
+    text-align: center
++comment('product page 992+ style')
++r(992)
+  .product-info .right
+    width: 60%
+  .buy_buttons
+    position: absolute
+    width: 170px
+    top: 31px
+  #button-cart
+    width: 100%
+    float: none
+  #button-cart-fast
+    padding-left: 30px
+    padding-right: 30px
+    width: 100%
+    float: none
